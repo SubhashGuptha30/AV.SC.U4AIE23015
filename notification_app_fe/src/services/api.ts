@@ -1,0 +1,11 @@
+import axios from "axios";
+
+const api = axios.create({
+    baseURL: "http://20.207.122.201/evaluation-service",
+    headers: {
+        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJhdi5zYy51NGFpZTIzMDE1QGF2LnN0dWRlbnRzLmFtcml0YS5lZHUiLCJleHAiOjE3NzgwNjQ3ODksImlhdCI6MTc3ODA2Mzg4OSwiaXNzIjoiQWZmb3JkIE1lZGljYWwgVGVjaG5vbG9naWVzIFByaXZhdGUgTGltaXRlZCIsImp0aSI6ImRhZmNjZmQxLTAxN2YtNGVhMS05YWUyLWRhN2MzZjNiMjA2ZCIsImxvY2FsZSI6ImVuLUlOIiwibmFtZSI6ImdhbnRhc2FsYSBzcmkgaGFyaSBzdWJoYXNoIGd1cHRoYSIsInN1YiI6Ijc1MzYwZjM3LWM0YTItNDg3OS1iNWQ1LWEwZDA1YWIzNWU5OSJ9LCJlbWFpbCI6ImF2LnNjLnU0YWllMjMwMTVAYXYuc3R1ZGVudHMuYW1yaXRhLmVkdSIsIm5hbWUiOiJnYW50YXNhbGEgc3JpIGhhcmkgc3ViaGFzaCBndXB0aGEiLCJyb2xsTm8iOiJhdi5zYy51NGFpZTIzMDE1IiwiYWNjZXNzQ29kZSI6IlBUQk1tUSIsImNsaWVudElEIjoiNzUzNjBmMzctYzRhMi00ODc5LWI1ZDUtYTBkMDVhYjM1ZTk5IiwiY2xpZW50U2VjcmV0IjoibmJWdnZ3U1hQU0V2R3J4ViJ9.WRpDgFY9pAEatzrg9Qw7a-sva6eQQjovi5lh1IfYMvI",
+        "Content-Type": "application/json",
+    },
+});
+
+export default api;
